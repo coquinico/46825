@@ -189,15 +189,14 @@ main .sectionAbout .p1, main .sectionAbout .p2 {
   color: #d9d9d9;
   font-family: "Exo 2", sans-serif;
   font-size: 23px;
-  padding-left: 10rem;
-  padding-right: 15rem;
-  margin-top: 20rem;
-  margin-bottom: 15rem;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 main .sectionAbout .p2 {
-  margin-top: 8rem;
-  padding-left: 15rem;
+  align-items: first baseline;
+  margin-top: none;
+  margin-bottom: 10rem;
 }
 
 .mainR h2 {
@@ -538,10 +537,8 @@ button, .buttonSub {
     text-align: center;
     font-size: 18px;
     margin-bottom: 4rem;
-    margin-top: 0rem;
   }
   main .sectionAbout .p1, main .sectionAbout .p2 {
-    margin-left: 6rem;
     margin-top: 20%;
     margin-bottom: 10%;
   }
@@ -654,8 +651,8 @@ button, .buttonSub {
     font-size: 12px;
   }
   main .sectionAbout p {
-    font-size: 12px;
-    margin-left: none;
+    font-size: 10px;
+    padding: none;
   }
   .mainr h2 {
     font-size: 15px;
