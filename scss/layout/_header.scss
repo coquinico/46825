@@ -1,0 +1,78 @@
+header {
+    justify-content: flex-end;
+
+    .subs {
+        display: flex;
+        justify-content: right;
+        margin-right: 2rem;
+        margin-top: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $mycolor2;
+            font-family: $myfont;
+
+            &:hover {
+                color: $mycolor;
+                font-weight: 900;
+                font-style: italic;
+            }
+
+        }
+    }
+
+    .logoRogan {
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 18%;
+            margin-top: 2rem;
+            &:hover{
+            transform: rotate(-0.50turn);}
+        }
+    }
+
+}
+
+.navbar {
+    @include flex;
+    list-style: none;
+    gap: 6rem;
+    padding: 5rem;
+    margin-bottom: 2;
+    margin-top: 40px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    float: inline-start;
+
+    li {
+        a {
+            color: $mycolor2;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: $myfont;
+
+            &:hover {
+                color: $mycolor;
+                font-weight: 900;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+
+.navbar2 {
+    background-color: $bgcolor;
+
+    h5 {
+        color: $mycolor;
+    }
+
+}
+
+.offcanvas {
+    background-color: rgb(26, 25, 25);
+}

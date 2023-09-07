@@ -1,0 +1,102 @@
+main {
+    section {
+        h1 {
+            color: $mycolor2;
+            text-align: center;
+            font-size: $titlesize ;
+            font-family: $myfont;
+            margin-bottom: 2rem;  
+            font-weight: 900;
+            font-style: italic;
+            text-shadow:0.1em 0.1em rgb(48, 47, 47);
+        }
+    }
+
+    .sectionPrincipal {
+        width: 100%;
+        text-align: center;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/587aec812994ca23948fd074/1517528821075-WYUSK6BGMO1LKMGE346T/Joe2.jpg?format=2500w);
+        background-size: cover;
+        background-position: center;
+        opacity: 60%;
+        margin-bottom: 2rem;
+        border-bottom-style: dotted;
+        border-top-style: dotted;
+        background-size: 100%, 100%;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .sectionSecundaria {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%;
+        margin-top: 5rem;
+
+        .imgA {
+            margin-top: 3rem;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-self: center;
+            width: 100%;
+            margin-left: 20rem;
+        }
+
+        h2 {
+            grid-column: 1/2;
+            color: $mycolor;
+            text-align: center;
+            font-family: $myfont;
+            font-weight: 900;
+            font-style: italic;
+
+        }
+
+        p {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            color: $mycolor2;
+            text-indent: 40px;
+            font-family: $myfont;
+            font-size: 18px;
+        }
+    }
+
+    .sectionTercera {
+        .tituloF {
+            padding-top: 2rem;
+            margin-top: 10rem;
+            color: $mycolor;
+            text-align: center;
+            font-family: $myfont;
+            font-weight: 900;
+            font-style: italic;
+
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 120px;
+            margin-bottom: 15rem;
+
+            .cardsFav {
+                background: rgba(177, 169, 157, 0.1);
+                box-shadow: 0 8px 32px 0 rgba(211, 119, 13, 0.37);
+                backdrop-filter: blur(8.5px);
+                -webkit-backdrop-filter: blur(8.5px);
+                border-radius: 10px;
+                border: 1opx solid rgba(255, 255, 255, 0.18);
+                }
+            }
+
+            h3 {
+                @include titulosF
+            }
+
+
+        }
+    }

@@ -1,0 +1,26 @@
+@media(max-width:1024px){
+    .navbar{
+        display:flex;
+        gap: 2rem;      
+        justify-content: center;
+    
+}
+
+.logoRogan img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 25%;
+
+}
+.navbar li a{
+    font-size: 20px;
+}
+.sectionSecundaria {
+    .imgA{
+        margin-right: 5rem;
+    }
+    .textA{
+        text-align: center;
+    }
+}}

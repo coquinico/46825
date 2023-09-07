@@ -1,0 +1,30 @@
+/**primero VARIABLES mixins**/ 
+@import './utilities/variables';
+@import './utilities/mixins';
+
+/**segundo el reset y tipografias**/
+
+@import './base/reset';
+
+/**tercero LAYOUT**/
+
+@import './layout/body';
+@import './layout/header';
+@import './layout/main';
+@import './layout/mainAbout';
+@import './layout/mainResearch';
+@import './layout/mainFavs';
+@import './layout/mainYoutube';
+@import './layout/mainSubs';
+
+@import './layout/footer';
+/**componentes**/
+@import './components/button';
+@import './components/transitions';
+
+/**MEDIA QUERY**/
+
+@import './layout/media/700';
+@import './layout/media/1024';
+@import './layout/media/768';
+@import './layout/media/425';

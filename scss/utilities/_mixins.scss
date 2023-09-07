@@ -1,0 +1,14 @@
+@mixin flex{
+display: flex;
+justify-content: center;
+}
+
+@mixin titulosF{
+        color: #ffffff;
+        font-family: $myfont;
+        font-style: inherit;
+        text-shadow: #DA5F26 1px 1px;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 20px;
+    }

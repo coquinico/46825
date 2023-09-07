@@ -1,0 +1,40 @@
+main {
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        flex-direction: column;
+        font-family: $myfont;
+        font-size: $fontsize;
+        color: $mycolor2;
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    .form {
+        input {
+            width: 100%;
+            text-align: center;
+            background: rgba(211, 211, 211, 0.082);
+            box-shadow: 0 8px 32px 0 rgba(231, 146, 18, 0.37);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            
+            
+            
+        }
+
+        }
+    }
+    .gif{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
+        margin-left: 3rem;
+}

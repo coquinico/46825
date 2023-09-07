@@ -1,0 +1,25 @@
+button {
+
+    background-color: black;
+    color: #ffffff;
+    margin-top: 20rem;
+    padding: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 10px;
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 15px;
+
+
+
+}
+
+.buttonSub {
+    @extend button;
+    background: rgba(211, 211, 211, 0.082);
+    box-shadow: 0 8px 32px 0 rgba(231, 146, 18, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}

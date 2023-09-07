@@ -1,0 +1,19 @@
+footer {
+    .redes {
+        @include flex;
+        flex-direction: row;
+        gap: 32px;
+        width: 100%;
+        padding: 1rem;
+        background-color: $mycolor;
+    }
+    .redesPages{
+        @include flex;
+        flex-direction: row;
+        gap:32px;
+        width: 100%;
+        padding: 1rem;
+        background-color: $mycolor;
+        
+        
+}}

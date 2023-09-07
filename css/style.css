@@ -1,802 +1,687 @@
- /*
-paleta
-0A0B0D
-DA5F26
-FFFFFF
-TIPOGRAFIA
-font-family: 'BioRhyme', serif;
-font-family: 'Roboto', sans-serif;
-*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/**primero VARIABLES mixins**/
+/**segundo el reset y tipografias**/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color:black;
-}
-header{
-    justify-content: flex-end;
-}
-.subs{
-    display: flex;
-    justify-content: right;
-    margin-right: 2rem;
-    margin-top: 2rem;
-}
-.subs a{
-    text-decoration: none   ;
-    color: #d9d9d9;
-    font-family: 'BioRhyme', serif;
-}
-.logoRogan img{
-    
-    display: block;
-    margin: 0 auto;
-    width: 18%;
-    margin-top: 2rem;
-    
-
+/**tercero LAYOUT**/
+body {
+  background-color: black;
 }
 
-
-.navbar{
-    display:flex ;
-    list-style: none;
-    gap: 6rem;
-    padding: 5rem;
-    justify-content: center;
-    margin-bottom: 2;
-    margin-top: 40px;
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    float: inline-start;
-    
-
-
-
+header {
+  justify-content: flex-end;
 }
-.navbar li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'BioRhyme', serif;;
-    
-    
-
-
+header .subs {
+  display: flex;
+  justify-content: right;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+header .subs a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-family: "Exo 2", sans-serif;
+}
+header .subs a:hover {
+  color: #DA5F26;
+  font-weight: 900;
+  font-style: italic;
+}
+header .logoRogan img {
+  display: block;
+  margin: 0 auto;
+  width: 18%;
+  margin-top: 2rem;
+}
+header .logoRogan img:hover {
+  transform: rotate(-0.5turn);
 }
 
-.navbar :hover{
-    color: #DA5F26;
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 6rem;
+  padding: 5rem;
+  margin-bottom: 2;
+  margin-top: 40px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  float: inline-start;
 }
+.navbar li a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+}
+.navbar li a:hover {
+  color: #DA5F26;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.navbar2 {
+  background-color: black;
+}
+.navbar2 h5 {
+  color: #DA5F26;
+}
+
+.offcanvas {
+  background-color: rgb(26, 25, 25);
+}
+
+main section h1 {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Exo 2", sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 0.1em 0.1em rgb(48, 47, 47);
+}
+main .sectionPrincipal {
+  width: 100%;
+  text-align: center;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/587aec812994ca23948fd074/1517528821075-WYUSK6BGMO1LKMGE346T/Joe2.jpg?format=2500w);
+  background-size: cover;
+  background-position: center;
+  opacity: 60%;
+  margin-bottom: 2rem;
+  border-bottom-style: dotted;
+  border-top-style: dotted;
+  background-size: 100%, 100%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+main .sectionSecundaria {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 50% 50%;
+  margin-top: 5rem;
+}
+main .sectionSecundaria .imgA {
+  margin-top: 3rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  width: 100%;
+  margin-left: 20rem;
+}
+main .sectionSecundaria h2 {
+  grid-column: 1/2;
+  color: #DA5F26;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main .sectionSecundaria p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #d9d9d9;
+  text-indent: 40px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+}
+main .sectionTercera .tituloF {
+  padding-top: 2rem;
+  margin-top: 10rem;
+  color: #DA5F26;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main .sectionTercera .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 120px;
+  margin-bottom: 15rem;
+}
+main .sectionTercera .cards .cardsFav {
+  background: rgba(177, 169, 157, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(211, 119, 13, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1opx solid rgba(255, 255, 255, 0.18);
+}
+main .sectionTercera h3 {
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  font-style: inherit;
+  text-shadow: #DA5F26 1px 1px;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+main .aboutSection h1 {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main .sectionAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionAbout img {
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 15rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+main .sectionAbout .p1, main .sectionAbout .p2 {
+  color: #d9d9d9;
+  font-family: "Exo 2", sans-serif;
+  font-size: 23px;
+  padding-left: 10rem;
+  padding-right: 15rem;
+  margin-top: 20rem;
+  margin-bottom: 15rem;
+  text-align: center;
+}
+main .sectionAbout .p2 {
+  margin-top: 8rem;
+  padding-left: 15rem;
+}
+
+.mainR h2 {
+  margin-bottom: 3rem;
+  color: #DA5F26;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.mainR .grids1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 2rem;
+  row-gap: 5rem;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.mainR .grids1 h3 {
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  font-style: inherit;
+  text-shadow: #DA5F26 1px 1px;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+.mainR .grids1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 60%;
+}
+.mainR .grids1 .gridVit {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+.mainR .grids1 .gridsHongo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+.mainR .grids1 .gridCarne {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  text-align: center;
+}
+.mainR .grids1 .gridHielo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+}
+.mainR .grids1 .GridSauna {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: center;
+}
+
+main .titleFav {
+  color: #DA5F26;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main .sectionFavs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 140px;
+  padding-top: 5%;
+  margin-bottom: 15rem;
+  gap: 64px;
+}
+main .sectionFavs h3 {
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  font-style: inherit;
+  text-shadow: #DA5F26 1px 1px;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+main .sectionFavs .cards1 {
+  background: rgba(177, 169, 157, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(211, 119, 13, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+main .sectionFavs .cards1:hover {
+  transform: scale(1.2);
+  transition: 100ms;
+}
+
+main h1, main h2 {
+  color: #DA5F26;
+  color: #DA5F26;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main h2 {
+  margin-bottom: 8rem;
+}
+main .videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+main .videos div {
+  margin-left: 25%;
+  margin-bottom: 5rem;
+}
+
+main .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  flex-direction: column;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 25px;
+}
+main .form input {
+  width: 100%;
+  text-align: center;
+  background: rgba(211, 211, 211, 0.082);
+  box-shadow: 0 8px 32px 0 rgba(231, 146, 18, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+  margin-left: 3rem;
+}
+
+footer .redes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #DA5F26;
+}
+footer .redesPages {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #DA5F26;
+}
+
+/**componentes**/
+button, .buttonSub {
+  background-color: black;
+  color: #ffffff;
+  margin-top: 20rem;
+  padding: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 10px;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 15px;
+}
+
+.buttonSub {
+  background: rgba(211, 211, 211, 0.082);
+  box-shadow: 0 8px 32px 0 rgba(231, 146, 18, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 .navbar li:after,
 .navbar li:before {
-content: "";
-position: absolute;
-width: 0%;
-display: block;
-height: 1px;
-transition: all 0.3s ease;
-margin-top: 2px;
-transition: all 300ms ease-in;
-}
-.navbar li:after{
-    bottom: 25%;
-    left: 0;
-}
-.navbar li:before{
-    top: 25%;
-    right: 0;
-}
-.navbar :hover::after{
-    width: 100%;
-    height: 1px;
-    bottom: 25%;
-    background-color: #d9d9d9;
-    
-}
-.navbar :hover::before{
-    width: 100%;
-    height: 1px;
-    top: 25%;
-    background-color:#d9d9d9;
-}
-.navbar2{
-    background-color: black;
-}
-.navbar2 h5{
-    color: #DA5F26;
+  content: "";
+  position: absolute;
+  width: 0%;
+  display: block;
+  height: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2px;
+  transition: all 300ms ease-in;
 }
 
-.offcanvas{
-    background-color: rgb(26, 25, 25);
+.navbar li:after {
+  bottom: 25%;
+  left: 0;
 }
 
+.navbar li:before {
+  top: 25%;
+  right: 0;
+}
 
-.sectionPrincipal{
-    width: 100%;
-    
+.navbar :hover::after {
+  width: 100%;
+  height: 1px;
+  bottom: 25%;
+  background-color: #d9d9d9;
+}
+
+.navbar :hover::before {
+  width: 100%;
+  height: 1px;
+  top: 25%;
+  background-color: #d9d9d9;
+}
+
+.cards .cardsFav:hover {
+  transform: scale(1.2);
+  transition: 100ms;
+}
+
+.grids1 img:hover {
+  transition: 300ms;
+  transform: scale(0.9);
+}
+
+/**MEDIA QUERY**/
+@media (max-width: 700px) {
+  header nav .navbar {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .navbar2 {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .logoRogan img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 25%;
+  }
+  .navbar li a {
+    font-size: 20px;
+  }
+  .sectionSecundaria .imgA {
+    margin-right: 5rem;
+  }
+  .sectionSecundaria .textA {
     text-align: center;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/587aec812994ca23948fd074/1517528821075-WYUSK6BGMO1LKMGE346T/Joe2.jpg?format=2500w);
-    background-size: cover;
-    background-position: center;
-    opacity:60%;
-    margin-bottom: 2rem;
-    border-bottom-style:dotted;
-    border-top-style: dotted;
-    background-size: 100%,100%;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    
-
+  }
 }
-
-
-
-
-
-button{
-
-    background-color: black;
-    color: #ffffff;
-    margin-top: 20rem; 
-    padding: 15px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    margin:10px;
-    width: 12rem;
-    height: 3.5rem;
-    font-size:20px ;
-    
-    
-    
-}
-
-
-
-h1{
-    color: #ffffff;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'BioRhyme', serif;;
-    margin-bottom: 2rem;
-
-}
-h2{
-    color: #DA5F26;
-    font-family: 'BioRhyme', serif;
-    text-align: center;
-    
-}
-h3{
-    color: #ffffff;
-    font-family:'BioRhyme', serif;
-    font-style: inherit;
-    text-shadow: #DA5F26 1px 1px;
-}
-.sectionSecundaria{
+@media (max-width: 768px) {
+  main .sectionSecundaria {
     display: grid;
-    width:100%;
-    grid-template-columns: 40% 40%;
+    width: 100%;
+    grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: 50% 50%;
     margin-top: 5rem;
-}
-
-.sectionSecundaria h2{
-    grid-column: 1/2;
-    
-}
-.sectionSecundaria .imgA{
+  }
+  main .sectionSecundaria .imgA {
     margin-top: 3rem;
-    grid-column: 1/2;
+    grid-column: 2/4;
     grid-row: 1/2;
     justify-self: center;
     width: 100%;
-    margin-left: 20rem;
-}
-.sectionSecundaria p{
-    grid-column: 2/3;
+    margin-left: none;
+  }
+  main .sectionSecundaria .textA {
+    grid-column: 2/4;
     grid-row: 2/3;
-    color: #ffffff;
-    text-indent: 40px;
-    font-family: 'BioRhyme', serif;
-}
-
-.tituloF{
-    padding-top: 2rem; 
-    margin-top: 10rem;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    /* flex tiene dos propiedades importates*/
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 120px;
-    margin-bottom: 15rem;
-    
-    
-}
-
-
-.cards h3{
-    text-align: center;
-    margin-top: 1rem;
-    
-}
-
-
-
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:32px;
-    width: 100%;
-    padding: 1rem;
-    
-    
-    
-
-}
-.redesPages{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap:32px;
-        width: 100%;
-        padding: 1rem;
-        
-        
-    
-}
-.imgAbout{
-    display: flex;
-    margin-top: 15rem;
-    margin-left: 5rem;
-
-}
-
-.sectionAbout p{
-    color: #ffffff;
-    font-family: 'BioRhyme', serif;
-    font-size: 25px;
-    
-}
-
-.titleYoutube h1{
-    
-    color: #DA5F26;
-    background-color: black;
-}
-.titleBestmoments h2{
-    
     color: #d9d9d9;
-    background-color: black;
-    text-align: center;
-}
-.titleFav{
-    padding-top: 4rem;
-}
-.form div{
-    background-color: black;
-    color: #d9d9d9;
-    font-size: 25px;
-    font-family: 'BioRhyme', serif;
-    
-    
-}
-
-.sectionFavs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 160px;
-    margin-bottom: 15rem;
-    gap: 64px;
-    
-}
-.sectionFavs h3{
-    text-align: center;
-    padding-top: 1rem;
+    font-family: "Exo 2", sans-serif;
     font-size: 18px;
-}
-
-.sectionAbout{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sectionAbout img{
-    max-width: 100%;
-    max-height:100%;
-    margin-top: 5rem;
-    margin-left: 10rem;
-}
-.sectionAbout p{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    margin-top: 6rem;
-    margin-bottom: 9rem;
-}
-.embed-responsive-item{
-    display: block;
-    align-items: center;
-    
-}
-
-.form{
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    padding: 2rem 2rem;
-    margin-bottom: 5rem;
-    flex-direction: column;
-    
-
-}
-.form input{
-    width: 100%;
-}
-
-.gif{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
-    margin-left: 3rem;
-}
-
-footer{
-    background-color: #DA5F26;
-}
-
-
-
-.rI{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 7rem;
-    margin-bottom: 3rem;
-}
-
-.rI h3{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.rI img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    
-}
-
-.mainR h2{
-    margin-bottom: 3rem;
-}
-.titleResearch{
-    margin-bottom: 3rem;
-}
-
-.grids1 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 60%
-}
-.grids1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    column-gap: 1rem;
-    row-gap: 5rem;
-    width: 100%;
-    height: auto;
-    
-    
-    
-}
-.gridVit{
-    grid-column:3/4 ;
-    grid-row: 1/2;
-    text-align: center;
-    
-    
-}
-.gridsHongo{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: center;
-
-}
-
-.gridCarne{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    text-align: center;
-}
-
-.gridHielo{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    text-align: center;
-}
-
-.GridSauna{
-    grid-column: 2/3;
-    grid-row: 1/3;
-    text-align: center;
-    
-}
-
-    
-
-    .videos {
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        
-    }
-    .videos div{
-
-        margin-left: 25%;
-        margin-bottom: 5rem;
-        
-    }
-.titleBestmoments{
-    margin-bottom: 8rem;
-}
-
-@media(min-width:700px){
-    .navbar2{
-        display: none;
-    }
-}
-
-
-
-@media(max-width:1024px){
-        .navbar{
-            display:flex;
-            gap: 2rem;      
-            justify-content: center;
-        
-    }
-
-    .logoRogan img{
-        display: block;
-        margin: 0 auto;
-        margin-top: 4rem;
-        width: 25%;
-
-        
-}.navbar li a{
-    font-size: 20px;
-}
-
-.sectionSecundaria .imgA{
-    margin-left: 10rem;
-    
-}
-
-}
-
-
-@media(max-width:768px){
-
-    .navbar li a{
-        font-size: 16px;
-        gap: 1rem;
-        
-
-    } 
-    
-    .logoRogan img{
-        display: block;
-        margin: 0 auto;
-        margin-top: 3rem;
-        width: 25%;
-    }
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-        
-    }
-    .cards h3{
-        margin-bottom: 2rem;
-    }
-    h1{
-        font-size: 35px;
-    }
-    .textA p{
-        font-size: 13px;
-        text-align: center;
-
-        margin-left: 3rem;
-        
-    }
-    button{
-        width: 7rem;
-        font-size: 10px;
-        height: 2rem; 
-        padding: 7px;
-        
-
-        }
-/************ABOUT**************/
-    .sectionAbout{
-        flex-direction: column;
-    }
-    .sectionAbout img{
-        width: 40%;
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-    .sectionAbout p{
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 4rem;
-    }
-    }
-    /************RESEARCH**************/
-    
-    .gridHongo h3{
-        font-size: 18px;
-    }
-    .gridSauna h3{
-        font-size: 18px;
-    }
-    .gridVit h3{
-        font-size: 18px;
-
-    }
-    .gridCarne h3{
-        font-size: 18px;
-    }
-    .gridHielo h3{
-        font-size: 18px;
-    }
-
-@media(max-width:700px){
-    .navbar{
-        display: none;
-    }
-    .navbar2{
-        display: inline;
-    }
-    /************RESEARCH**************/
-
-    .gridHongo h3{
-        font-size: 15px;
-    }
-    .gridSauna h3{
-        font-size: 15px;
-    }
-    .gridVit h3{
-        font-size: 15px;
-
-    }
-    .gridCarne h3{
-        font-size: 15px;
-    }
-    .gridHielo h3{
-        font-size: 15px;
-    }
-}
-
-@media(max-width:425px){
-    .subs{
-        display: none;
-    }
-    .logoRogan img{
-        display: block;
-        margin: 0 auto;
-        margin-top: 4rem;
-        width: 25%;
-    
-
-    } 
-    .navbar{
-        display: none;
-    }   
-    
-    .navbar2{
-        display: inline;
-    }
-    
-    button{
-        width: 4rem;
-        font-size: 8px;
-        height: 2rem; 
-        padding: 4px;
-        
-    }
-    h1{
-        font-size: 80%;
-        margin-top: 2rem;
-    }
-    .sectionSecundaria{
-        display: flex;
-        flex-direction: column;
-        margin-top: none;
-        
-    }
-    .sectionSecundaria img{ 
-    
+    margin-top: none;
+  }
+  main .sectionSecundaria .textA h2 {
     display: none;
-
-    }
-    .sectionSecundaria h2{
-    
-        font-size: 15px;
-    }
-    .sectionSecundaria p{
-        font-size: 10px;
-        text-align: center;
-        margin-right: 5rem;
-        margin-left: 5rem;
-        
-    }
-    .tituloF{
-        font-size: 15px;
-    }
-    
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 80px;
-        margin-bottom: 15rem;
-        width: 100%;
-        
-        
-    }
-
-    .cards img{
-        width: 55%;
-        margin-left: 3.5rem;
-    }
-    
-    
-    .cards h3{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 15px;
-        
-    }
-    /************ABOUT**************/
-    .sectionAbout{
-        flex-direction: column;
-        margin-bottom: 6rem;
-    }
-    .sectionAbout img{
-        width: 30%;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        margin-right: 0rem;
-        
-
-}
-    .sectionAbout p{
-
-        padding: 0%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
-    .mainR h2{
-        font-size: 15px;
-        margin-top: 2rem;
-    }
-/************RESEARCH**************/
-    .grids1{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto auto auto auto auto;
-        row-gap: 2rem;
-        width: 400px;
-        font-size: 8px;
-    }
-    .gridHongo{
-        grid-column:1/2;
-        grid-row: 1/2;
-        
-    }
-    .gridSauna{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .gridVit{
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    .gridHielo{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    
-    }
-    .gridCarne{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .gridHongo h3{
-        font-size: 12px;
-    }
-    .gridSauna h3{
-        font-size: 12px;
-    }
-    .gridVit h3{
-        font-size: 12px;
-
-    }
-    .gridCarne h3{
-        font-size: 12px;
-    }
-    .gridHielo h3{
-        font-size: 12px;
-    }
-/*****fFAVORITES********/
-.titleFav{
+  }
+  main .sectionTercera .cards .cardsFav {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+    border: none;
+  }
+  .navbar li a {
+    font-size: 16px;
+    gap: 1rem;
+  }
+  .logoRogan img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 25%;
+  }
+  button, .buttonSub {
+    width: 7rem;
     font-size: 10px;
-}    
-.sectionFavs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 80px;
-        margin-bottom: 15rem;
-        width: 100%;
-        
-        
-    }
-
-    .sectionFavs img{
-        width: 55%;
-        margin-left: 3.5rem;
-    }
-    
-    
-    .sectionFavs h3{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 15px;
-    }
-    footer img{
-        width: 50%;
-        margin:2px ;
-
-    }
-    /************YOUTUBE**************/
-
+    height: 2rem;
+    padding: 7px;
+  }
+}
+@media (max-width: 768px) {
+  main .sectionAbout {
+    flex-direction: column;
+  }
+  main .sectionAbout img {
+    width: 40%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  main .sectionAbout .p1 .p2, main .sectionAbout .p2 .p2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 4rem;
+    margin-top: 0rem;
+  }
+  main .sectionAbout .p1, main .sectionAbout .p2 {
+    margin-left: 6rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 768px) {
+  main .grids1 .gridHongo h3 {
+    font-size: 18px;
+  }
+  main .grids1 .gridSauna h3 {
+    font-size: 18px;
+  }
+  main .grids1 .gridVit h3 {
+    font-size: 18px;
+  }
+  main .grids1 .gridCarne h3 {
+    font-size: 18px;
+  }
+  main .grids1 .gridHielo h3 {
+    font-size: 18px;
+  }
+  main .form {
+    font-size: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  header .subs {
+    display: none;
+  }
+  .logoRogan img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 25%;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar2 {
+    display: inline;
+  }
+  button, .buttonSub {
+    width: 4rem;
+    font-size: 8px;
+    height: 2rem;
+    padding: 4px;
+  }
+  main section h1 {
+    font-size: 90%;
+  }
+  main .sectionSecundaria {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+  }
+  main .sectionSecundaria img {
+    display: none;
+  }
+  main .sectionSecundaria p {
+    text-align: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 12px;
+  }
+  main .sectionTercera .tituloF {
+    font-size: 15px;
+  }
+  main .sectionTercera .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15rem;
+    width: 100%;
+  }
+  main .sectionTercera .cards img {
+    width: 45%;
+    margin-left: 5rem;
+  }
+  main .sectionTercera .cards h3 {
+    text-align: center;
+    margin-top: 0rem;
+    font-size: 15px;
+    margin-bottom: 3rem;
+  }
+  main .sectionTercera .cards .cardsFav {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+    border: none;
+  }
+  main .titleFav h2 {
+    font-size: 15px;
+  }
+  main .sectionFavs .cards1 {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+    border: none;
+  }
+  main .sectionFavs .cards1 img {
+    width: 80%;
+    margin-left: 1rem;
+  }
+  main .sectionFavs .cards1 h3 {
+    font-size: 12px;
+  }
+  main .sectionAbout p {
+    font-size: 12px;
+    margin-left: none;
+  }
+  .mainr h2 {
+    font-size: 15px;
+  }
+  .mainr .grids1 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+  }
+  .mainr .grids1 article {
+    margin-left: 4.5rem;
+  }
+  .mainr .grids1 article img {
+    border-radius: 100px;
+  }
+  .mainr .grids1 .gridCarne {
+    margin-bottom: 5rem;
+  }
+  main .titleYoutube h1 {
+    font-size: 15px;
+  }
+  footer img {
+    width: 50%;
+    margin: 2px;
+  }
 }
 
-
-    
-    
-
-
-
-/*
-como generamos nombres a las clases-ids
-
-camelCase: sectionPrincipalDeCoqui :D
-kebab: section-principal-de-coqui    :D
-snake: section_principal_de_coqui
-
-BEM: proyectos mas grandes
-*/
+/*# sourceMappingURL=style.css.map */
