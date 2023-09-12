@@ -106,7 +106,7 @@
         }
 
         .sectionFavs {
-            
+
             .cards1 {
                 background: none;
                 box-shadow: none;
@@ -124,8 +124,8 @@
                     font-size: 12px;
                 }
             }
-            
-            
+
+
 
         }
 
@@ -148,6 +148,7 @@
             display: flex;
             flex-direction: row;
             width: 80%;
+
             align-items: center;
 
 
@@ -155,23 +156,47 @@
                 margin-left: 4.5rem;
 
                 img {
-                    border-radius: 100px;
+                    border-radius: 60%px;
+                    max-width: 50%;
                 }
             }
 
             .gridCarne {
                 margin-bottom: 5rem;
             }
-        }
-    }
-    
-    main{
-        .titleYoutube{
-            h1{
-                font-size: 15px;
+
+            .gridHongo {
+                img {
+                    margin-left: 3.5rem;
+                }
             }
         }
     }
+
+    main {
+        .titleYoutube {
+            h1 {
+                font-size: 15px;
+            }
+
+        }
+
+        .titleBestmoments {
+            h2 {
+                font-size: 15px;
+            }
+        }
+        .form{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        .gif{
+            iframe{
+                max-width: 60%;
+            }
+        }
+    }
+    
 
     footer {
         img {

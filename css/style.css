@@ -166,6 +166,10 @@ main .sectionTercera h3 {
   font-size: 20px;
 }
 
+footer .redes div img:hover {
+  transform: scale(0.9);
+}
+
 main .aboutSection h1 {
   color: #d9d9d9;
   text-align: center;
@@ -184,19 +188,24 @@ main .sectionAbout img {
   margin-left: 15rem;
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 2rem;
 }
 main .sectionAbout .p1, main .sectionAbout .p2 {
   color: #d9d9d9;
   font-family: "Exo 2", sans-serif;
   font-size: 23px;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 main .sectionAbout .p2 {
   align-items: first baseline;
   margin-top: none;
   margin-bottom: 10rem;
+}
+
+footer .redesPages img:hover {
+  transform: scale(0.9);
 }
 
 .mainR h2 {
@@ -667,13 +676,27 @@ button, .buttonSub {
     margin-left: 4.5rem;
   }
   .mainr .grids1 article img {
-    border-radius: 100px;
+    border-radius: 60% px;
+    max-width: 50%;
   }
   .mainr .grids1 .gridCarne {
     margin-bottom: 5rem;
   }
+  .mainr .grids1 .gridHongo img {
+    margin-left: 3.5rem;
+  }
   main .titleYoutube h1 {
     font-size: 15px;
+  }
+  main .titleBestmoments h2 {
+    font-size: 15px;
+  }
+  main .form {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  main .gif iframe {
+    max-width: 60%;
   }
   footer img {
     width: 50%;

@@ -98,5 +98,20 @@ main {
             }
 
 
+
         }
-    }
+            }
+        footer{
+            .redes{
+                div{
+                    img{
+                        &:hover{
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+                
+                }
+            }
+        
+    
