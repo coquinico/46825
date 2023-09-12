@@ -668,22 +668,13 @@ button, .buttonSub {
   }
   .mainr .grids1 {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    align-items: center;
-  }
-  .mainr .grids1 article {
-    margin-left: 4.5rem;
-  }
-  .mainr .grids1 article img {
-    border-radius: 60% px;
-    max-width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: min-content;
+    margin-left: 7rem;
   }
   .mainr .grids1 .gridCarne {
-    margin-bottom: 5rem;
-  }
-  .mainr .grids1 .gridHongo img {
-    margin-left: 3.5rem;
+    margin-bottom: 4rem;
   }
   main .titleYoutube h1 {
     font-size: 15px;
@@ -694,9 +685,6 @@ button, .buttonSub {
   main .form {
     font-size: 12px;
     margin-bottom: 0px;
-  }
-  main .gif iframe {
-    max-width: 60%;
   }
   footer img {
     width: 50%;

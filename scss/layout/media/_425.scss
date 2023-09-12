@@ -146,30 +146,17 @@
 
         .grids1 {
             display: flex;
-            flex-direction: row;
-            width: 80%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-width: min-content;
+            margin-left: 7rem;
+            
 
-            align-items: center;
+        .gridCarne{
+            margin-bottom: 4rem;
+        }
 
 
-            article {
-                margin-left: 4.5rem;
-
-                img {
-                    border-radius: 60%px;
-                    max-width: 50%;
-                }
-            }
-
-            .gridCarne {
-                margin-bottom: 5rem;
-            }
-
-            .gridHongo {
-                img {
-                    margin-left: 3.5rem;
-                }
-            }
         }
     }
 
@@ -190,11 +177,7 @@
             font-size: 12px;
             margin-bottom: 0px;
         }
-        .gif{
-            iframe{
-                max-width: 60%;
-            }
-        }
+        
     }
     
 
