@@ -75,6 +75,7 @@ Además, utilizamos las siguientes tecnologías:
 
 
 ## Créditos
+![Sin título](https://github.com/coquinico/46825/assets/139014533/ebec1f82-e38e-430c-a91b-23c68de86b2c)
 
 Este proyecto ha sido desarrollado por Lucrecia Nicolao como parte del curso de Desarrollo Web.
 
