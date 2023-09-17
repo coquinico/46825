@@ -12,6 +12,7 @@ main {
     .sectionAbout {
         @include flex;
         align-items: center;
+        margin-top: 5rem;
 
         img {
             display: flex;
@@ -19,7 +20,7 @@ main {
             margin-left: 15rem;
             max-width: 100%;
             max-height: 100%;
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
 
         }
 
@@ -41,10 +42,13 @@ main {
 
 
         }
+        
 
 
     }
-}
+
+        }
+    
 
 footer {
     .redesPages {

@@ -168,10 +168,13 @@ main .sectionTercera h3 {
 main .info {
   display: flex;
   flex-direction: row;
+  background-color: #000000;
+  background-image: linear-gradient(210deg, #000000 0%, #55aa6c 99%, #689654 100%);
 }
 main .info p {
   font-family: "Exo 2", sans-serif;
-  color: rgb(46, 196, 96);
+  font-weight: 900;
+  color: black;
   font-size: 20px;
   margin-left: 14rem;
   margin-top: 10rem;
@@ -180,10 +183,16 @@ main .info2 {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 25rem;
+  background-color: #000000;
+  background-image: linear-gradient(19deg, #000000 0%, #55aa6c 99%, #689654 100%);
+}
+main .info2 img {
+  width: 50%;
 }
 main .info2 p {
   font-family: "Exo 2", sans-serif;
-  color: rgb(46, 196, 96);
+  font-weight: 900;
+  color: black;
   font-size: 20px;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -205,6 +214,7 @@ main .sectionAbout {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 main .sectionAbout img {
   display: flex;
@@ -212,7 +222,7 @@ main .sectionAbout img {
   margin-left: 15rem;
   max-width: 100%;
   max-height: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 main .sectionAbout .p1, main .sectionAbout .p2 {
   color: #d9d9d9;
