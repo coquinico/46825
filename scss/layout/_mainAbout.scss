@@ -11,7 +11,7 @@ main {
 
     .sectionAbout {
         @include flex;
-        align-items:center;
+        align-items: center;
 
         img {
             display: flex;
@@ -33,27 +33,27 @@ main {
 
         }
 
-        .p2{
-            align-items:first baseline;
+        .p2 {
+            align-items: first baseline;
             @extend .p1;
             margin-top: none;
-            margin-bottom: 10rem;
+            margin-bottom: 20rem;
 
 
         }
-    }}
-    footer{
-        .redesPages{
-                        img{
-                            &:hover{
-                                transform: scale(0.9);
-                            }
-                        }
-                    
-                    
-                    }
-                }
-            
-        
 
 
+    }
+}
+
+footer {
+    .redesPages {
+        img {
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+
+
+    }
+}

@@ -100,6 +100,32 @@ main {
 
 
         }
+        .info{
+            display: flex;
+            flex-direction: row;
+            
+            p{
+                font-family: $myfont;
+                color: rgb(46, 196, 96);
+                font-size: 20px;
+                margin-left: 14rem;
+                margin-top: 10rem;
+                
+            }
+        }
+        .info2{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 25rem;
+            p{
+                font-family: $myfont;
+                color: rgb(46, 196, 96);
+                font-size: 20px;
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-top: 10rem;
+            }
+        }
             }
         footer{
             .redes{

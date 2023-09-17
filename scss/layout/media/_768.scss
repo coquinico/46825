@@ -1,5 +1,37 @@
 @media(max-width:768px) {
     main {
+        .elon {
+            img {
+                width: 60%;
+            }
+
+            p {
+                width: 30%;
+                margin-top: 6rem;
+                margin-left: 2.5rem;
+                font-size: 13px;
+            }
+        }
+
+        .tyson {
+            img {
+                width: 60%;
+            }
+
+            p {
+                width: 30%;
+                font-size: 13px;
+            }
+
+            flex-direction: row-reverse;
+
+            p {
+                margin: 0rem;
+                margin-right: 2rem;
+                margin-top: 3rem;
+            }
+        }
+
         .sectionSecundaria {
             display: grid;
             width: 100%;
@@ -30,20 +62,23 @@
                 margin-top: none;
             }
         }
-        .sectionTercera{
-            .cards{
-                .cardsFav{
-                background: none;
-                box-shadow: none;
-                backdrop-filter: none;
-                -webkit-backdrop-filter: none;
-                border-radius: none;
-                border: none;}
+
+        .sectionTercera {
+            .cards {
+                .cardsFav {
+                    background: none;
+                    box-shadow: none;
+                    backdrop-filter: none;
+                    -webkit-backdrop-filter: none;
+                    border-radius: none;
+                    border: none;
+                }
             }
         }
+
     }
-       
-    
+
+
 
     .navbar li a {
         font-size: 16px;
@@ -61,13 +96,14 @@
 
 
 
-button {
-    width: 7rem;
-    font-size: 10px;
-    height: 2rem;
-    padding: 7px;
+    button {
+        width: 7rem;
+        font-size: 10px;
+        height: 2rem;
+        padding: 7px;
 
-} }
+    }
+}
 
 //**ABOUT**//
 
@@ -94,9 +130,46 @@ button {
                 margin-top: 20%;
                 margin-bottom: 10%;
             }
+
+            .p2 {
+                margin-bottom: 15rem;
+            }
         }
 
-    }}
+        .sectionTercera {
+            .cards {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .info {
+            flex-direction: column;
+            margin-bottom: 15rem;
+
+            img {
+                width: 100%;
+
+            }
+
+            p {
+                width: 100%;
+                font-size: 20px;
+                text-align: center;
+
+                margin: 0rem;
+                margin-top: 5rem;
+
+
+            }
+
+        }
+
+        .info2 {
+            display: none;
+        }
+    }
+}
+
 
 
 
@@ -130,15 +203,16 @@ button {
 
 
 
-//**SUBSCRIBE**//
-main {
-    .form {
-        font-size: 15px;
-        font-size: 18px;
+    //**SUBSCRIBE**//
+    main {
+        .form {
+            font-size: 15px;
+            font-size: 18px;
 
+
+
+        }
 
 
     }
-
-
-}}
+}

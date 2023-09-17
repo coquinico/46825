@@ -165,6 +165,30 @@ main .sectionTercera h3 {
   margin-top: 1rem;
   font-size: 20px;
 }
+main .info {
+  display: flex;
+  flex-direction: row;
+}
+main .info p {
+  font-family: "Exo 2", sans-serif;
+  color: rgb(46, 196, 96);
+  font-size: 20px;
+  margin-left: 14rem;
+  margin-top: 10rem;
+}
+main .info2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 25rem;
+}
+main .info2 p {
+  font-family: "Exo 2", sans-serif;
+  color: rgb(46, 196, 96);
+  font-size: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 10rem;
+}
 
 footer .redes div img:hover {
   transform: scale(0.9);
@@ -201,7 +225,7 @@ main .sectionAbout .p1, main .sectionAbout .p2 {
 main .sectionAbout .p2 {
   align-items: first baseline;
   margin-top: none;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 
 footer .redesPages img:hover {
@@ -281,7 +305,7 @@ main .sectionFavs {
   justify-content: space-evenly;
   padding: 140px;
   padding-top: 5%;
-  margin-bottom: 15rem;
+  margin-bottom: 2rem;
   gap: 64px;
 }
 main .sectionFavs h3 {
@@ -293,7 +317,7 @@ main .sectionFavs h3 {
   margin-top: 1rem;
   font-size: 20px;
 }
-main .sectionFavs .cards1 {
+main .cards1 {
   background: rgba(177, 169, 157, 0.1);
   box-shadow: 0 8px 32px 0 rgba(211, 119, 13, 0.37);
   backdrop-filter: blur(8.5px);
@@ -301,9 +325,32 @@ main .sectionFavs .cards1 {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-main .sectionFavs .cards1:hover {
+main .cards1:hover {
   transform: scale(1.2);
   transition: 100ms;
+}
+main .elon, main .tyson {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .elon p, main .tyson p {
+  color: #DA5F26;
+  text-align: center;
+  width: 30%;
+  margin-top: 15rem;
+  margin-left: 8rem;
+  font-size: 15px;
+}
+main .elon img, main .tyson img {
+  width: 50%;
+}
+main .tyson {
+  flex-direction: row-reverse;
+  margin-bottom: 10rem;
+}
+main .tyson p {
+  margin-right: 9rem;
 }
 
 main h1, main h2 {
@@ -482,6 +529,30 @@ button, .buttonSub {
   }
 }
 @media (max-width: 768px) {
+  main .elon img, main .tyson img {
+    width: 60%;
+  }
+  main .elon p, main .tyson p {
+    width: 30%;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    font-size: 13px;
+  }
+  main .tyson {
+    flex-direction: row-reverse;
+  }
+  main .tyson img {
+    width: 60%;
+  }
+  main .tyson p {
+    width: 30%;
+    font-size: 13px;
+  }
+  main .tyson p {
+    margin: 0rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
   main .sectionSecundaria {
     display: grid;
     width: 100%;
@@ -550,6 +621,29 @@ button, .buttonSub {
   main .sectionAbout .p1, main .sectionAbout .p2 {
     margin-top: 20%;
     margin-bottom: 10%;
+  }
+  main .sectionAbout .p2 {
+    margin-bottom: 15rem;
+  }
+  main .sectionTercera .cards {
+    margin-bottom: 5rem;
+  }
+  main .info {
+    flex-direction: column;
+    margin-bottom: 15rem;
+  }
+  main .info img {
+    width: 100%;
+  }
+  main .info p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0rem;
+    margin-top: 5rem;
+  }
+  main .info2 {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -620,7 +714,7 @@ button, .buttonSub {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
     width: 100%;
   }
   main .sectionTercera .cards img {
@@ -659,9 +753,21 @@ button, .buttonSub {
   main .sectionFavs .cards1 h3 {
     font-size: 12px;
   }
+  main .info p {
+    font-size: 13px;
+  }
+  main .tyson {
+    display: none;
+  }
+  main .elon, main .tyson {
+    display: none;
+  }
   main .sectionAbout p {
     font-size: 10px;
     padding: none;
+  }
+  main .sectionAbout .p2 {
+    margin-bottom: 8rem;
   }
   .mainr h2 {
     font-size: 15px;
