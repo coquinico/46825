@@ -17,7 +17,7 @@
 
 ![logos_coderhouse](https://github.com/coquinico/46825/assets/139014533/aacb648d-0823-41f9-bacd-d8e16731baeb)
 
-Este repositorio contiene el código fuente para un sitio web que hemos desarrollado como parte de un curso de Desarrollo Web. El sitio web se centra en el podcast de Joe Rogan y utiliza diversas tecnologías web modernas, como HTML5, Grids, Bootstrap, SEO, Sass y Flexbox.
+Este repositorio contiene el código fuente para un sitio web que desarrolle como parte de un curso de Desarrollo Web. El sitio web se centra en el podcast de Joe Rogan y utiliza diversas tecnologías web modernas, como HTML5, Grids, Bootstrap, SEO, Sass y Flexbox.
 
 # "The Joe Rogan Experience" - Descripción del Podcast
 
@@ -49,19 +49,19 @@ El proyecto se compone de los siguientes archivos HTML:
 4. `favorites.html`: Una página que proporciona información sobre los invitados favoritos del show.
 5. `youtube.html`: Página con algunos videos seleccionados .
 
-Además, utilizamos las siguientes tecnologías:
+Además, utilice las siguientes tecnologías:
 
-- **HTML5**: Hemos adoptado HTML5 para estructurar adecuadamente nuestro contenido web y aprovechar sus características semánticas.
+- **HTML5**: Adopte HTML5 para estructurar adecuadamente nuestro contenido web y aprovechar sus características semánticas.
 
-- **Grids**: Hemos utilizado CSS Grids para crear un diseño flexible y moderno para el sitio web.
+- **Grids**: Utilice CSS Grids para crear un diseño flexible y moderno para el sitio web.
 
-- **Bootstrap**: Hemos incorporado Bootstrap para la creación rápida y fácil de componentes y estilos consistentes.
+- **Bootstrap**: Incorpore Bootstrap para la creación rápida y fácil de componentes y estilos consistentes.
 
-- **SEO (Optimización para Motores de Búsqueda)**: Hemos implementado buenas prácticas de SEO en todas las páginas para mejorar la visibilidad del sitio web en los motores de búsqueda.
+- **SEO (Optimización para Motores de Búsqueda)**: Implemente  prácticas de SEO en todas las páginas para mejorar la visibilidad del sitio web en los motores de búsqueda.
 
-- **Sass**: Utilizamos Sass como preprocesador CSS para mantener nuestro código CSS organizado y modular.
+- **Sass**: Utilice Sass como preprocesador CSS para mantener nuestro código CSS organizado y modular.
 
-- **Flexbox**: Hemos aplicado Flexbox en algunos elementos para un posicionamiento flexible y un diseño responsive.
+- **Flexbox**: Aplique Flexbox en algunos elementos para un posicionamiento flexible y un diseño responsive.
 
 - ![responsive](https://github.com/coquinico/46825/assets/139014533/19aebec3-b278-49ec-af8b-af6df84b2585)
 
