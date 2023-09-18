@@ -1,6 +1,7 @@
 main {
     .form {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         padding: 1rem 1rem;
@@ -19,6 +20,7 @@ main {
         input {
             width: 100%;
             text-align: center;
+            font-size: 20px;
             background: rgba(211, 211, 211, 0.082);
             box-shadow: 0 8px 32px 0 rgba(231, 146, 18, 0.37);
             backdrop-filter: blur( 4px );
