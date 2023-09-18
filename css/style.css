@@ -799,10 +799,10 @@ button, .buttonSub {
     text-align: center;
   }
   .mainr .grids1 {
-    width: 100%;
+    width: 50%;
     gap: 0rem;
     gap: 1rem;
-    margin-left: 0.7rem;
+    margin-left: 6rem;
   }
   .mainr .grids1 h3 {
     display: none;
