@@ -207,16 +207,15 @@
 
 
 
-    //**SUBSCRIBE**//
-    main {
-        .form {
-            font-size: 15px;
-            font-size: 18px;
 
-
-
-        }
 
 
     }
-}
+    
+    @media(max-width:768px) {
+        main{
+            form{
+                font-size: 18px;
+            }
+        }
+    }

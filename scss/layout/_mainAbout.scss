@@ -27,7 +27,7 @@ main {
         .p1 {
             color: $mycolor2;
             font-family: $myfont;
-            font-size: 23px;
+            font-size: 20px;
             text-align: center;
             padding-left: 7rem;
             padding-right: 7rem;
@@ -39,26 +39,19 @@ main {
             @extend .p1;
             margin-top: none;
             margin-bottom: 20rem;
-
-
         }
         
-
-
     }
-
-        }
+}
     
 
 footer {
     .redesPages {
         img {
-            width: 60%;
+            width: 70%;
             &:hover {
                 transform: scale(0.9);
             }
         }
-
-
     }
 }

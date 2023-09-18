@@ -1,15 +1,4 @@
 main{
-    h1,h2{
-        color: $mycolor;
-        color: $mycolor;
-        text-align: center;
-        font-family: $myfont;
-        font-weight: 900;
-        font-style: italic;
-    }
-    h2{
-        margin-bottom: 8rem;
-    }
     .videos {
         display: flex;
         flex-direction: column; 
