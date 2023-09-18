@@ -300,6 +300,15 @@ footer .redesPages img:hover {
   grid-row: 1/3;
   text-align: center;
 }
+.mainR section p {
+  font-size: 15px;
+  font-family: "Exo 2", sans-serif;
+  color: #d9d9d9;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 10rem;
+}
 
 main .titleFav {
   color: #DA5F26;
@@ -641,16 +650,17 @@ button, .buttonSub {
   main .info {
     flex-direction: column;
     margin-bottom: 15rem;
+    background-color: black;
   }
   main .info img {
     width: 100%;
+    background-color: black;
   }
   main .info p {
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin: 0rem;
-    margin-top: 5rem;
   }
   main .info2 {
     display: none;
@@ -685,7 +695,7 @@ button, .buttonSub {
     display: block;
     margin: 0 auto;
     margin-top: 4rem;
-    width: 25%;
+    width: 35%;
   }
   .navbar {
     display: none;
@@ -772,40 +782,52 @@ button, .buttonSub {
   main .elon, main .tyson {
     display: none;
   }
+  main .sectionAbout img {
+    margin: 0rem;
+  }
   main .sectionAbout p {
     font-size: 10px;
-    padding: none;
+    padding: 0rem;
+    margin: 0rem;
   }
   main .sectionAbout .p2 {
+    margin: 0rem;
     margin-bottom: 8rem;
   }
   .mainr h2 {
-    font-size: 15px;
+    font-size: 12px;
+    text-align: center;
   }
   .mainr .grids1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    gap: 1rem;
+    margin-left: 0.7rem;
+  }
+  .mainr .grids1 h3 {
+    display: none;
+  }
+  .mainr section p {
+    font-size: 13px;
+  }
+  .mainr img {
     max-width: min-content;
-    margin-left: 7rem;
   }
-  .mainr .grids1 .gridCarne {
-    margin-bottom: 4rem;
-  }
-  main .titleYoutube h1 {
-    font-size: 15px;
-  }
-  main .titleBestmoments h2 {
-    font-size: 15px;
-  }
-  main .form {
-    font-size: 12px;
-    margin-bottom: 0px;
-  }
-  footer img {
-    width: 50%;
-    margin: 2px;
-  }
+}
+main .titleYoutube h1 {
+  font-size: 15px;
+}
+main .titleBestmoments h2 {
+  font-size: 15px;
+}
+main .form {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+footer img {
+  width: 50%;
+  margin: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

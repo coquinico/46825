@@ -11,7 +11,7 @@
             display: block;
             margin: 0 auto;
             margin-top: 4rem;
-            width: 25%;
+            width: 35%;
 
         }
     }
@@ -148,35 +148,57 @@
         }
 
         .sectionAbout {
+            img{
+                
+                margin: 0rem;
+            }
             p {
                 font-size: 10px;
-                padding: none;
+                padding: 0rem;
+                margin: 0rem;
 
 
             }
 
             .p2 {
+                margin: 0rem;
                 margin-bottom: 8rem;
+
             }
         }
     }
 
     .mainr {
         h2 {
-            font-size: 15px;
+            font-size: 12px;
+            text-align: center;
+            
         }
 
         .grids1 {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            max-width: min-content;
-            margin-left: 7rem;
+            width: 100%;
+            gap: 0rem;
+            gap: 1rem;
+            margin-left: 0.7rem;
 
-
-            .gridCarne {
-                margin-bottom: 4rem;
+h3{
+    display: none;
+}
+        }
+        section{
+            p{
+                font-size: 13px;
             }
+        }
+
+
+            
+
+            img{
+                max-width: min-content;
+            }
+
+
 
 
         }
@@ -210,4 +232,3 @@
             margin: 2px;
         }
     }
-}

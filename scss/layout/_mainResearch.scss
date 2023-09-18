@@ -18,7 +18,7 @@
         height: auto;
         flex-wrap: wrap;
 
-        h3{
+        h3 {
             @include titulosF
         }
 
@@ -29,42 +29,58 @@
             opacity: 60%;
 
         }
-        .gridVit{
-            grid-column:3/4 ;
+
+        .gridVit {
+            grid-column: 3/4;
             grid-row: 1/2;
             text-align: center;
-            
-            
+
+
         }
-        .gridsHongo{
+
+        .gridsHongo {
             grid-column: 1/2;
             grid-row: 1/2;
             text-align: center;
-        
+
         }
-        
-        .gridCarne{
+
+        .gridCarne {
             grid-column: 3/4;
             grid-row: 2/3;
             text-align: center;
         }
-        
-        .gridHielo{
+
+        .gridHielo {
             grid-column: 1/2;
             grid-row: 2/3;
             text-align: center;
         }
-        
-        .GridSauna{
+
+        .GridSauna {
             grid-column: 2/3;
             grid-row: 1/3;
             text-align: center;
-            
+
         }
-        
-            
 
 
+
+
+    }
+
+    section {
+        p {
+            font-size: 15px;
+            font-family: $myfont;
+            color: $mycolor2;
+
+            margin-top: 1rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-bottom: 10rem;
         }
     }
 
+
+}
