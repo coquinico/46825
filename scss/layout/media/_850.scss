@@ -1,4 +1,4 @@
-@media(max-width:768px) {
+@media(max-width:850px) {
     main {
         .elon {
             img {
@@ -107,7 +107,7 @@
 
 //**ABOUT**//
 
-@media(max-width:768px) {
+@media(max-width:850px) {
     main {
         .sectionAbout {
             flex-direction: column;
@@ -175,46 +175,51 @@
 
 
 //**RESEARCH**//
-@media(max-width:768px) {
+@media(max-width:850px) {
     .mainR {
         .grids1 {
             height: 30%;
-            .gridHongo h3 {
-                font-size: 18px;
-            }
+            margin-bottom: 20rem;
+            
 
-            .gridSauna h3 {
-                font-size: 18px;
-            }
-
-            .gridVit h3 {
-                font-size: 18px;
-
-            }
-
-            .gridCarne h3 {
-                font-size: 18px;
-            }
-
-            .gridHielo h3 {
-                font-size: 18px;
-            }
 
         }
-    }
 
+        .gridHongo h3 {
+            font-size: 18px;
+        }
 
+        .gridSauna h3 {
+            font-size: 18px;
+        }
 
-    //**SUBSCRIBE**//
-    main {
-        .form {
-            font-size: 15px;
+        .gridVit h3 {
             font-size: 18px;
 
-
-
         }
+
+        .gridCarne h3 {
+            font-size: 18px;
+        }
+
+        .gridHielo h3 {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+
+//**SUBSCRIBE**//
+main {
+    .form {
+        font-size: 15px;
+        font-size: 18px;
+
 
 
     }
+
+
 }

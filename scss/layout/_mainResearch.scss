@@ -15,8 +15,9 @@
         column-gap: 2rem;
         row-gap: 5rem;
         width: 100%;
-        height: auto;
+        height: 90%;
         flex-wrap: wrap;
+        margin-bottom: 10rem;
 
         h3 {
             @include titulosF
