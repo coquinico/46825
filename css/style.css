@@ -525,9 +525,14 @@ button, .buttonSub {
     display: none;
   }
 }
-@media (max-width: 1300px) {
-  .grids1 {
+@media (max-width: 1359px) {
+  main .grids1 {
     height: 30%;
+  }
+  main .tyson p {
+    margin: 0rem;
+    margin-right: 5rem;
+    margin-top: 10rem;
   }
 }
 @media (max-width: 1024px) {
